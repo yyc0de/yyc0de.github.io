@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <span class="name">Adrian Simbulan</span>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-background">
+            <canvas id="matrix-canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="tagline">Cybersecurity Specialist</p>
+                <h1>Securing Digital <span class="highlight">Infrastructure</span></h1>
+                <p class="hero-description">Penetration testing, threat analysis, and security architecture design</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I'm a dedicated cybersecurity professional with expertise in penetration testing, vulnerability assessment, and security infrastructure design. My approach combines technical proficiency with strategic thinking to protect organizations from evolving cyber threats.</p>
+                    <p class="about-philosophy"><strong>Philosophy:</strong> Security isn't just about building walls—it's about understanding the attacker's mindset and staying one step ahead through continuous learning and adaptation.</p>
+                    <p class="about-mission"><strong>Mission:</strong> To help organizations build resilient security frameworks that protect their assets while enabling innovation and growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Enterprise Network Security Audit</h3>
+                    <p>Comprehensive security assessment of a Fortune 500 company's network infrastructure, identifying and remediating 47 critical vulnerabilities.</p>
+                    <div class="tech-tags">
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                        <span>Metasploit</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Web Application Penetration Testing</h3>
+                    <p>Full-stack security testing of an e-commerce platform, discovering SQL injection and XSS vulnerabilities before production deployment.</p>
+                    <div class="tech-tags">
+                        <span>Burp Suite</span>
+                        <span>OWASP ZAP</span>
+                        <span>SQLMap</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Zero Trust Architecture Implementation</h3>
+                    <p>Designed and implemented a zero trust security model for a healthcare organization, reducing attack surface by 65%.</p>
+                    <div class="tech-tags">
+                        <span>Azure AD</span>
+                        <span>MFA</span>
+                        <span>Network Segmentation</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Operations Center Setup</h3>
+                    <p>Established a 24/7 SOC with SIEM integration, automated threat detection, and incident response protocols.</p>
+                    <div class="tech-tags">
+                        <span>Splunk</span>
+                        <span>ELK Stack</span>
+                        <span>SOAR</span>
+                    </div>
+                    <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-terminal"></i> Technical Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Penetration Testing</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Network Security</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Threat Intelligence</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Incident Response</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="tool-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Kali Linux</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-server"></i>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Metasploit</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Burp Suite</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Splunk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-user-check"></i> Soft Skills</h3>
+                    <ul class="soft-skills-list">
+                        <li><i class="fas fa-check"></i> Risk Assessment & Management</li>
+                        <li><i class="fas fa-check"></i> Technical Documentation</li>
+                        <li><i class="fas fa-check"></i> Security Awareness Training</li>
+                        <li><i class="fas fa-check"></i> Cross-functional Collaboration</li>
+                        <li><i class="fas fa-check"></i> Problem Solving Under Pressure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>Senior Security Consultant</h3>
+                        <p class="company">SecureNet Solutions</p>
+                        <p>Leading penetration testing engagements and security assessments for enterprise clients across various industries.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3>Cybersecurity Analyst</h3>
+                        <p class="company">TechGuard Inc.</p>
+                        <p>Monitored security systems, investigated incidents, and implemented security controls to protect critical infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2020</span>
+                        <h3>Junior Security Engineer</h3>
+                        <p class="company">CyberDefense Corp.</p>
+                        <p>Assisted in vulnerability assessments, security audits, and implementation of security best practices.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2014 - 2018</span>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="company">University Name</p>
+                        <p>Specialized in cybersecurity and network security. Dean's List all semesters.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-download">
+                <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm currently available for consulting and full-time opportunities. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Response time: Within 24 hours</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <button id="back-to-top" class="back-to-top">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
