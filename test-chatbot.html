@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <h1 style="color: var(--primary-color); text-align: center; padding: 50px;">Chatbot Test Page</h1>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                <h3>SECURITY_AI v2.0</h3>
+                <button id="chatbot-close" aria-label="Close Chatbot">&times;</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send">SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Debug script to verify chatbot is loading
+        window.addEventListener('load', () => {
+            console.log('Page loaded');
+            console.log('Chatbot object:', chatbot);
+            console.log('Chatbot toggle:', document.getElementById('chatbot-toggle'));
+            console.log('Chatbot window:', document.getElementById('chatbot-window'));
+        });
+    </script>
+</body>
+</html>

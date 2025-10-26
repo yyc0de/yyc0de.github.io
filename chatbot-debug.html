@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Debug Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #0f1419;
+            color: #00ff88;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .debug-info {
+            background: #1a1f2e;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #00ff88;
+            border-radius: 8px;
+        }
+
+        #test-button {
+            background: #00ff88;
+            color: #0a0e27;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #test-button:hover {
+            background: #00ccff;
+        }
+
+        .status {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Chatbot Debug Test</h1>
+
+    <div class="debug-info">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Open your browser's Developer Console (F12)</li>
+            <li>Click the test button below</li>
+            <li>Look for console messages</li>
+            <li>Check if the chatbot button appears in bottom-right</li>
+        </ol>
+    </div>
+
+    <button id="test-button">Click to Test Chatbot</button>
+
+    <div class="status" id="status">Waiting for test...</div>
+
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Include your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chatbot HTML -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle" aria-label="Toggle Chatbot">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                <h3>SECURITY_AI v2.0</h3>
+                <button id="chatbot-close" aria-label="Close Chatbot">&times;</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send">SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include your script -->
+    <script src="script.js"></script>
+
+    <!-- Debug script -->
+    <script>
+        console.log('=== CHATBOT DEBUG TEST ===');
+
+        document.getElementById('test-button').addEventListener('click', function() {
+            const status = document.getElementById('status');
+
+            console.log('Test button clicked');
+
+            // Check if chatbot elements exist
+            const toggle = document.getElementById('chatbot-toggle');
+            const window = document.getElementById('chatbot-window');
+
+            if (!toggle) {
+                status.textContent = '❌ ERROR: Chatbot toggle button not found!';
+                status.style.color = '#ff0055';
+                console.error('chatbot-toggle not found');
+                return;
+            }
+
+            if (!window) {
+                status.textContent = '❌ ERROR: Chatbot window not found!';
+                status.style.color = '#ff0055';
+                console.error('chatbot-window not found');
+                return;
+            }
+
+            status.textContent = '✅ Elements found! Clicking chatbot button...';
+            status.style.color = '#00ff88';
+
+            console.log('Chatbot toggle element:', toggle);
+            console.log('Chatbot window element:', window);
+            console.log('Attempting to click chatbot toggle...');
+
+            // Simulate click on chatbot toggle
+            toggle.click();
+
+            setTimeout(() => {
+                const isActive = window.classList.contains('active');
+                if (isActive) {
+                    status.textContent = '✅ SUCCESS! Chatbot is now open!';
+                    status.style.color = '#00ff88';
+                } else {
+                    status.textContent = '⚠️ WARNING: Chatbot did not open. Check console for errors.';
+                    status.style.color = '#ff9500';
+                }
+            }, 500);
+        });
+
+        // Check initialization
+        setTimeout(() => {
+            console.log('Checking chatbot state after 2 seconds...');
+            console.log('chatbot object:', typeof chatbot !== 'undefined' ? chatbot : 'NOT FOUND');
+            console.log('chatbot-toggle:', document.getElementById('chatbot-toggle'));
+            console.log('chatbot-window:', document.getElementById('chatbot-window'));
+        }, 2000);
+    </script>
+</body>
+</html>

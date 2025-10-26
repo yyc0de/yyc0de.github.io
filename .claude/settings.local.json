@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"c:\\Users\\adrians\\OneDrive - TrendMicro\\Desktop\\Github Projects\\yy-portfolio\")",
+      "Bash(findstr:*)",
+      "Bash(node -c:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
